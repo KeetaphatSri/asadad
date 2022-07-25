@@ -64,17 +64,17 @@ def  main():
     elif too == "To Vancouver Canada(YVR)":
         hour += 2
         natee += 20
-        if hour >= 12 and time2 == "AM":
+        if hour > 12 and time2 == "AM":
             hour -= 12
             if natee >= 60:
                 natee -= 60
                 hour += 1
             print("BKK - YVR")
             print("%02d"%hour+":"+str(natee)+"PM")
-        elif hour >= 12 and time2 == "PM":
+        elif hour > 12 and time2 == "PM":
             hour -= 12
             if natee >= 60:
-                natee -= 60
+                natee -= 60s
                 hour += 1
             print("BKK - YVR")
             print("%02d"%hour+":"+str(natee), "AM")
@@ -94,7 +94,7 @@ def  main():
                 hour += 1
             print("BKK - KTM")
             print("%02d"%hour+":"+str(natee)+"PM")
-        elif hour >= 12 and time2 == "PM":
+        elif hour > 12 and time2 == "PM":
             hour -= 12
             if natee >= 60:
                 natee -= 60
