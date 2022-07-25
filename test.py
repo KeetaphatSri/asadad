@@ -85,7 +85,7 @@ def  main():
             print("BKK - YVR")
             print("%02d"%hour+":"+str(natee), time2)
     elif too == "To Kathmandu (KTM)":
-        hour += 23
+        hour += 11
         natee += 45
         if hour >= 12 and time2 == "AM":
             hour -= 12
